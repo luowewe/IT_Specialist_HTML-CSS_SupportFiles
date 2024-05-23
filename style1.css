@@ -29,4 +29,15 @@ li.dropDown{
   z-index:1;
 }
 
-
+.dropDown-content a{
+  color:black;
+  display:block;
+  text-align:left;
+}
+.dropDown-content a:hover{
+  background-color:#f1f2f1;
+  color:pink;
+}
+.dropDown:hover .dropDown-content{
+  display:block;
+}
