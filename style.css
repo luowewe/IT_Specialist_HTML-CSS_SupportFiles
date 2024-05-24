@@ -1,50 +1,43 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+ul{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color:#777;
 }
-
-li {
-  float: left;
+li{
+  float:left;
 }
-
-li a, .dropBtn {
+li a, .dropBtn{
   display: inline-block;
-  color: red;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  color: pink;
+  text-align:center;
+  padding: 12px 14px;
 }
-
 li a:hover, .dropDown:hover .dropBtn {
-  background-color: pink;
+  background-color: red;
+}
+li.dropDown{
+  display:inline-block;
+}
+.dropDown-content{
+  display:none;
+  position:absolute;
+  background-color:#f9f9f9;
+  min-width:160px;
+  box-shadow: 0px 8px 16px 0px rgba(1,0,1,0.3);
+  z-index:1;
 }
 
-li.dropDown {
-  display: inline-block;
+.dropDown-content a{
+  color:black;
+  display:block;
+  text-align:left;
 }
-
-.dropDown-content {
-  display: none;
-  position: absolute;
-  background-color: #f7f8f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.dropDown-content a:hover{
+  background-color:#f1f2f1;
+  color:pink;
 }
-
-.dropDown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropDown-content a:hover {background-color: #f1f2f3;}
-
-.dropDown:hover .dropDown-content {
-  display: block;
+.dropDown:hover .dropDown-content{
+  display:block;
 }
